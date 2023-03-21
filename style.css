@@ -1,71 +1,70 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-body {
-  background-color: white;
-}
+/* -------------mobile view--------------- */
 h1 {
-  margin: 10px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 175%;
-  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  border: purple solid;
+  height: 50px;
 }
 section {
   position: relative;
-  padding: 15px;
+  padding: 25px;
+  padding-top: 50px;
   width: 100%;
 }
 
 div {
-  position: relative;
   background-color: gray;
-  border: 1px solid black;
+  border: 5px solid black;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
 }
-.s1 {
+.chicken {
   float: right;
   width: 100px;
   padding: 5px;
   margin: 0px;
-  border: 3px solid rgb(66, 62, 62);
+  border: 3px solid black;
   text-align: center;
   font-size: 125%;
   font-weight: bold;
   background-color: tomato;
 }
-.s2 {
+.beef {
   float: right;
   color: black;
   width: 100px;
   padding: 5px;
   margin: 0px;
-  border: 3px solid rgb(75, 69, 69);
+  border: 3px solid black;
   text-align: center;
   font-size: 125%;
   font-weight: bold;
-  background-color: red;
+  background-color: darkred;
 }
-.s1 {
+.sushi {
   color: black;
   float: right;
   width: 100px;
   padding: 5px;
   margin: 0px;
-  border: 3px solid rgb(83, 78, 78);
+  border: 3px solid black;
   text-align: center;
   font-size: 125%;
   font-weight: bold;
-  background-color: yellow;
+  background-color: rgb(201, 201, 143);
 }
-.content {
+p {
   padding: 5px;
-  border: none;
   background-color: gray;
-  font-family: Helvetica;
   color: black;
   margin: 0px;
   height: 200px;
@@ -73,36 +72,27 @@ div {
   clear: right;
 }
 
-.row {
-  width: 90%;
-}
+/*------------------tablet view ------------------------------*/
 
-/*desktop version*/
-@media (min-width: 992px) {
-  .column-lg-4 {
-    float: left;
-    width: 33.33%;
-  }
-}
-/*tablet version*/
 @media (min-width: 768px) and (max-width: 991px) {
-  .colmn-md-6 {
+  .md-screen {
     float: left;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
   }
-  .colmn-md-12 {
+  .sm-screen {
     float: left;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
 }
-/*mobile version*/
-@media (max-width: 767px) {
-  .colmn-sm-12 {
+
+/* --------------------desktop view--------------*/
+@media (min-width: 992px) {
+  .lg-screen {
     float: left;
-    width: 100%;
+    width: 33.33%;
   }
 }
